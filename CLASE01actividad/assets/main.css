@@ -1,0 +1,163 @@
+/* *{
+    border: red 2px solid;    
+} */
+nav{
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+}
+
+nav img{
+    height: 90%;
+    padding: 1cm;
+}
+nav a{
+    background-color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    margin: .5cm;        
+}
+
+nav a:hover{
+    color: red;
+    background: greenyellow;
+} 
+#home-cover{
+    height: 70vh;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/images/fondo.jpg");
+    background-size: contain;    
+}
+
+.texto-busqueda
+{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+    line-height: 250%;
+    letter-spacing: .2cm;
+}
+
+.texto-busqueda p:first-child{
+    font-size: 30px;
+}
+
+button{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+button:hover{
+    background-color: gold;
+}
+.cBarraBusqueda{
+width: 300px;
+background-color: rgba(0, 0, 0, .9);
+}
+
+footer{
+    background-color:grey;
+}
+
+nav div a:last-child{
+    background:magenta;
+}
+
+input,  textarea{
+    color: #fff;        
+}
+
+a:visited {
+    color: green;
+  }
+
+  @media only screen and (min-width: 650px){
+  .mobile{
+      display: none;
+  }
+  .desktop{
+    display: block;
+    }
+}
+
+
+@media only screen and (max-width: 650px){
+    .mobile{
+        display: block;
+    }
+    .dropdown{
+        display: none;
+    }
+    
+  .mobile:hover .dropdown{
+    display: block;
+} 
+    .desktop{
+        display: none;
+    }
+
+  }
+
+  .mobile:hover{
+
+    background: gold;
+  }
+
+  #icons-travels{
+      display: flex;
+      justify-content: space-evenly;   
+      flex-wrap: wrap;   
+  }
+  #icons-travels div{
+      display: flex;
+      height: 200px;
+      width: 200px;
+      align-items: center;
+      justify-content: center;
+  }
+
+  #grid-container{
+      display: grid;
+      width: 80vw;
+      grid-template-columns: repeat(3,auto);
+      justify-items: center;
+  }
+
+  .container{
+      display: flex;
+      justify-content: center;
+  }
+
+  .containerPractica{
+    display: grid;
+    grid-gap: 5px;
+    height: auto;
+    grid-template-columns: repeat(3,33.33333%);
+    grid-template-rows: repeat(3,auto);
+    /*start end stretch center space-arround space-between space-evenly*/
+    justify-items: center;
+    align-content: center;
+    
+    /*justify-items:start end center stretch;
+    align-items: start end center stretch;
+
+    justify-items:center;
+    align-items: center;*/
+}
+.item{
+    background: lightblue;
+    padding: 10px;
+    border: 1px solid red;
+    /*margin-right: 10px;
+    margin-bottom: 10px;*/
+}        
+
+p{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
