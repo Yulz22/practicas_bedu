@@ -1,0 +1,119 @@
+@import "variables";
+@import "navbar";
+@import "mixins";
+@import "herencias";
+/* *{
+    border: red 2px solid;    
+} */
+
+
+#home-cover{
+    height: 70vh;
+    @include bgColor(grey);
+    @extend %flexB;
+    background-image: url("../assets/images/fondo.jpg");
+    background-size: contain;    
+}
+
+.texto-busqueda{
+    text-align: center;
+    font-family: $fuente;
+    color: aliceblue;
+    line-height: 250%;
+    letter-spacing: .2cm;
+    p:first-child{
+        font-size: 30px;
+    }
+}
+
+
+button{
+    font-family: $fuente;
+    :hover{       
+        @include bgColor(gold);
+    }
+}
+
+
+.cBarraBusqueda{
+width: 300px;
+@include bgColor(rgba(0, 0, 0, .9));
+}
+
+footer{
+    @include bgColor(grey);
+}
+
+
+
+input,  textarea{
+    color: #fff;        
+}
+
+a:visited {
+    color: green;
+  }
+
+
+
+  .mobile:hover{
+
+    background: gold;
+  }
+
+  #icons-travels{
+      display: flex;
+      justify-content: space-evenly;   
+      flex-wrap: wrap;   
+  }
+  #icons-travels div{
+      @extend %flexB;
+      height: 200px;
+      width: 200px;
+  }
+
+  #grid-container{
+      display: grid;
+      width: 80vw;
+      grid-template-columns: repeat(3,auto);
+      justify-items: center;
+  }
+
+  .container{
+      display: flex;
+      justify-content: center;
+  }
+
+  .containerPractica{
+    display: grid;
+    grid-gap: 5px;
+    height: auto;
+    grid-template-columns: repeat(3,33.33333%);
+    grid-template-rows: repeat(3,auto);
+    /*start end stretch center space-arround space-between space-evenly*/
+    justify-items: center;
+    align-content: center;
+    
+    /*justify-items:start end center stretch;
+    align-items: start end center stretch;
+
+    justify-items:center;
+    align-items: center;*/
+}
+.item{
+    background: lightblue;
+    padding: 10px;
+    border: 1px solid red;
+    /*margin-right: 10px;
+    margin-bottom: 10px;*/
+}        
+
+p{
+    text-align: center;
+    font-family: $fuente;
+}
+
+@import "gridItems";
+
+@import "mediaQueryes";
+

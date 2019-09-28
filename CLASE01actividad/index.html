@@ -34,7 +34,7 @@
                 </div>
                 <div>
                     <input type="text" placeholder="Escribe y pulsa Buscar..." class="cBarraBusqueda" required>
-                    <button>Buscar <i class="fa fa-search"></i></button>
+                    <button id="btnBuscar">Buscar <i class="fa fa-search"></i></button>
                 </div>
             </div>
         </section>
@@ -127,6 +127,15 @@
                     </p>
             </div>
                 </section>
+             
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+               <script>
+               $(document).ready(function(){
+                    $("#btnBuscar").click(
+                    function(){$(".texto-busqueda").css({"background-color":"pink"});}    
+                    );            
+               });
+               </script>
 </body>
 <footer>
     <section class="texto-busqueda">

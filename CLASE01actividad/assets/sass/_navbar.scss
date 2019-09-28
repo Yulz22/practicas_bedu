@@ -1,0 +1,27 @@
+nav{
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    img {
+        height: 90%;
+        padding: 1cm;
+    }
+    a{
+        background-color: white;
+        font-family: $fuente;
+        text-decoration: none;
+        margin: .5cm;    
+    }
+    a:hover{
+        color: red;
+        background: greenyellow;
+    } 
+    div{
+        a:last-child{
+            background:magenta;
+        }
+    }
+}
